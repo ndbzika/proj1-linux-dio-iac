@@ -38,17 +38,17 @@ chmod 770 /sec
 
 # Creating users
 
-userdd carlos -c "Carlos" -g GRP_ADM -m -s /bin/bash -p $(openssl passwd -1 senha123)
-userdd maria -c "Maria" -g GRP_ADM -m -s /bin/bash -p $(openssl passwd -1 senha123)
-userdd joao -c "João" -g GRP_ADM -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd carlos -c "Carlos" -g GRP_ADM -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd maria -c "Maria" -g GRP_ADM -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd joao -c "João" -g GRP_ADM -m -s /bin/bash -p $(openssl passwd -1 senha123)
 
-userdd debora -c "Débora" -g GRP_VEN -m -s /bin/bash -p $(openssl passwd -1 senha123)
-userdd sebastiana -c "Sebastiana" -g GRP_VEN -m -s /bin/bash -p $(openssl passwd -1 senha123)
-userdd roberto -c "Roberto" -g GRP_VEN -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd debora -c "Débora" -g GRP_VEN -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd sebastiana -c "Sebastiana" -g GRP_VEN -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd roberto -c "Roberto" -g GRP_VEN -m -s /bin/bash -p $(openssl passwd -1 senha123)
 
-userdd josefina -c "Josefine" -g GRP_SEC -m -s /bin/bash -p $(openssl passwd -1 senha123)
-userdd amanda -c "Amanda" -g GRP_SEC -m -s /bin/bash -p $(openssl passwd -1 senha123)
-userdd rogerio -c "Rogerio" -g GRP_SEC -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd josefina -c "Josefine" -g GRP_SEC -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd amanda -c "Amanda" -g GRP_SEC -m -s /bin/bash -p $(openssl passwd -1 senha123)
+useradd rogerio -c "Rogerio" -g GRP_SEC -m -s /bin/bash -p $(openssl passwd -1 senha123)
 
 # Enabling password change
 
